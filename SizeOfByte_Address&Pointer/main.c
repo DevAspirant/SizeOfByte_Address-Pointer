@@ -10,9 +10,18 @@
 
 int main(int argc, const char * argv[])
 {
-
-    // insert code here...
-    printf("Hello, World!\n");
+    int i = 17;
+    int *addressOfI = &i;
+    
+    printf(" i stored it,s value : %d \n",*addressOfI);
+    *addressOfI = 89;
+    printf(" Now the new value of i : %d \n",i);
+    
+    /*  SizeOF */
+    printf("An integer is %zu bytes \n",sizeof(i));
+    printf("A Pointer is %zu bytes \n",sizeof(addressOfI));
+    
     return 0;
+    
 }
 
